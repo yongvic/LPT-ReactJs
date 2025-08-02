@@ -1,6 +1,5 @@
 import { MapPin, Phone, Mail } from 'lucide-react';
-
-export default function Contact() {
+function Contact() {
   return (
     <div className="animate-fadeIn">
       {/* Page Header */}
@@ -117,3 +116,4 @@ export default function Contact() {
     </div>
   );
 }
+export const Component = Contact;

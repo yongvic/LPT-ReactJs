@@ -22,7 +22,10 @@ export default function Navbar() {
               Contact
             </Link>
             <Link to="/projects" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
-              Blog
+              Projets
+            </Link>
+            <Link to="/notes" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
+              Notes
             </Link>
           </div>
           <button
@@ -47,7 +50,10 @@ export default function Navbar() {
             Contact
           </Link>
           <Link to="/projects" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
-            Blog
+            Projets
+          </Link>
+          <Link to="/notes" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
+            Notes
           </Link>
         </div>
       )}

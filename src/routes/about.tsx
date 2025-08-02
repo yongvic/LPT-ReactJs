@@ -1,4 +1,4 @@
-export default function About() {
+function About() {
   return (
     <div className="animate-fadeIn">
       {/* Page Header */}
@@ -107,3 +107,4 @@ export default function About() {
     </div>
   );
 }
+export const Component = About;

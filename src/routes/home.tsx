@@ -3,7 +3,7 @@ import { Users } from 'lucide-react';
 import { BarChart3 } from 'lucide-react';
 
 
-export default function Home() {
+function Home() {
   return (
     <div className="animate-fadeIn">
       {/* Hero Section */}
@@ -115,3 +115,4 @@ export default function Home() {
     </div>
   );
 }
+export const Component = Home;
