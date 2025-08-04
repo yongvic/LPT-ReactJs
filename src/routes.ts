@@ -8,4 +8,6 @@ export default [
   route("projects", "routes/projects.tsx"),
   route("projects/:id", "routes/project-detail.tsx"),
   route("notes", "routes/notes.tsx"),
+  route("blog", "routes/blog.tsx"),
+  route("blog/:id", "routes/blog.$id.tsx"),
 ] satisfies RouteObject[];

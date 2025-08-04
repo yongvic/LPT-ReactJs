@@ -27,6 +27,9 @@ export default function Navbar() {
             <Link to="/notes" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
               Notes
             </Link>
+            <Link to="/blog" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
+              Blog
+            </Link>
           </div>
           <button
             className="md:hidden flex items-center"
@@ -54,6 +57,9 @@ export default function Navbar() {
           </Link>
           <Link to="/notes" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
             Notes
+          </Link>
+          <Link to="/blog" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
+            Blog
           </Link>
         </div>
       )}

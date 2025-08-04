@@ -2,10 +2,16 @@ import type { RouteObject } from "react-router-dom";
 
 export const index = (componentPath: string): RouteObject => ({
   index: true,
-  lazy: () => import(`./${componentPath}`),
+  async lazy() {
+    const { default: Component } = await import(`./${componentPath}`);
+    return { Component };
+  },
 });
 
 export const route = (path: string, componentPath: string): RouteObject => ({
   path,
-  lazy: () => import(`./${componentPath}`),
+  async lazy() {
+    const { default: Component } = await import(`./${componentPath}`);
+    return { Component };
+  },
 });
