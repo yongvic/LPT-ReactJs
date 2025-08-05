@@ -30,6 +30,9 @@ export default function Navbar() {
             <Link to="/blog" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
               Blog
             </Link>
+            {/* <Link to="/signup" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
+              Sign Up
+            </Link> */}
           </div>
           <button
             className="md:hidden flex items-center"
@@ -60,6 +63,9 @@ export default function Navbar() {
           </Link>
           <Link to="/blog" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
             Blog
+          </Link>
+          <Link to="/signup" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
+            Sign Up
           </Link>
         </div>
       )}
