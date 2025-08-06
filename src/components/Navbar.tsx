@@ -30,6 +30,9 @@ export default function Navbar() {
             <Link to="/blog" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
               Blog
             </Link>
+            <Link to="/pokemons" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
+              Pokémons
+            </Link>
             {/* <Link to="/signup" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
               Sign Up
             </Link> */}
@@ -63,6 +66,9 @@ export default function Navbar() {
           </Link>
           <Link to="/blog" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
             Blog
+          </Link>
+          <Link to="/pokemons" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
+            Pokémons
           </Link>
           <Link to="/signup" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
             Sign Up

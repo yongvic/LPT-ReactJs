@@ -11,4 +11,6 @@ export default [
   route("blog", "routes/blog.tsx"),
   route("blog/:id", "routes/blog.$id.tsx"),
   route("home", "routes/home.tsx"),
+  route("pokemons", "routes/pokemons.tsx"),
+  route("pokemons/:id", "routes/pokemon-detail.tsx"),
 ] satisfies RouteObject[];
