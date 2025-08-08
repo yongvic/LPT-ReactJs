@@ -13,4 +13,6 @@ export default [
   route("home", "routes/home.tsx"),
   route("pokemons", "routes/pokemons.tsx"),
   route("pokemons/:id", "routes/pokemon-detail.tsx"),
+  route("jokes", "routes/jokes.tsx"),
+  route("jokes/favorites", "routes/jokes.favorites.tsx"),
 ] satisfies RouteObject[];

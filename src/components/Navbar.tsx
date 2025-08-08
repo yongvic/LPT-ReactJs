@@ -33,6 +33,12 @@ export default function Navbar() {
             <Link to="/pokemons" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
               Pokémons
             </Link>
+            <Link to="/jokes" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
+              Blagues
+            </Link>
+            <Link to="/jokes/favorites" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
+              Favoris
+            </Link>
             {/* <Link to="/signup" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
               Sign Up
             </Link> */}
@@ -69,6 +75,12 @@ export default function Navbar() {
           </Link>
           <Link to="/pokemons" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
             Pokémons
+          </Link>
+          <Link to="/jokes" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
+            Blagues
+          </Link>
+          <Link to="/jokes/favorites" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
+            Favoris
           </Link>
           <Link to="/signup" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
             Sign Up
