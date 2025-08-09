@@ -2,7 +2,7 @@ import { index, route } from "./route-config";
 import type { RouteObject } from "react-router-dom";
 
 export default [
-  index("routes/signup.tsx"),
+  index("routes/quotes.tsx"),
   route("about", "routes/about.tsx"),
   route("contact", "routes/contact.tsx"),
   route("projects", "routes/projects.tsx"),
@@ -15,4 +15,6 @@ export default [
   route("pokemons/:id", "routes/pokemon-detail.tsx"),
   route("jokes", "routes/jokes.tsx"),
   route("jokes/favorites", "routes/jokes.favorites.tsx"),
+  route("quotes", "routes/quotes.tsx"),
+  route("quotes/history", "routes/quotes.history.tsx"),
 ] satisfies RouteObject[];

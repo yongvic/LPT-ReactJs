@@ -39,6 +39,9 @@ export default function Navbar() {
             <Link to="/jokes/favorites" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
               Favoris
             </Link>
+            <Link to="/quotes" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
+              Citations
+            </Link>
             {/* <Link to="/signup" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
               Sign Up
             </Link> */}
@@ -81,6 +84,9 @@ export default function Navbar() {
           </Link>
           <Link to="/jokes/favorites" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
             Favoris
+          </Link>
+          <Link to="/quotes" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
+            Quotes
           </Link>
           <Link to="/signup" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
             Sign Up
