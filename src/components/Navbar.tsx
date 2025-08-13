@@ -42,6 +42,9 @@ export default function Navbar() {
             <Link to="/quotes" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
               Citations
             </Link>
+            <Link to="/weather" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
+              Météo
+            </Link>
             {/* <Link to="/signup" className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
               Sign Up
             </Link> */}
@@ -87,6 +90,9 @@ export default function Navbar() {
           </Link>
           <Link to="/quotes" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
             Quotes
+          </Link>
+          <Link to="/weather" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
+            Météo
           </Link>
           <Link to="/signup" className="block text-gray-600 hover:text-blue-500 transition-colors duration-300" onClick={() => setIsOpen(false)}>
             Sign Up

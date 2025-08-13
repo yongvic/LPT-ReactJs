@@ -5,21 +5,23 @@ function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-400 to-indigo-600 text-white">
       <div className="text-center animate-fadeInDown">
-        <h1 className="text-6xl font-extrabold mb-4">Welcome to My App</h1>
-        <p className="text-xl mb-8">Your ultimate guide to the world of Pokémon and Jokes</p>
+        <h1 className="text-6xl font-extrabold mb-4">Weather App</h1>
+        <p className="text-xl mb-8">Get the weather forecast for any city</p>
       </div>
-      <div className="flex space-x-4">
-        <Link
-          to="/pokemons"
-          className="bg-yellow-400 text-gray-800 font-bold py-4 px-10 rounded-full hover:bg-yellow-500 transition-transform transform hover:scale-110 duration-300 shadow-lg animate-bounce"
-        >
-          Explore Pokémon
-        </Link>
-        <Link
-          to="/jokes"
-          className="bg-green-400 text-gray-800 font-bold py-4 px-10 rounded-full hover:bg-green-500 transition-transform transform hover:scale-110 duration-300 shadow-lg animate-bounce"
-        >
-          Get a Joke
+      <div className="flex flex-col items-center space-y-4">
+        <form method="get" action="/weather" className="flex items-center">
+          <input
+            type="text"
+            name="city"
+            placeholder="Enter a city"
+            className="p-2 border rounded-l text-black"
+          />
+          <button type="submit" className="p-2 bg-blue-500 text-white rounded-r">
+            Search
+          </button>
+        </form>
+        <Link to="/weather/history" className="text-white hover:underline">
+          View Search History
         </Link>
       </div>
     </div>
